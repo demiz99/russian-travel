@@ -1,8 +1,25 @@
 @font-face {
     font-family: 'Inter';
-    src: 
+    src:
     url(/fonts/Inter-Regular.woff) format('woff'),
     url(/fonts/Inter-Regular.woff2) format('woff2');
+    font-weight: normal;
+}
+  
+  @font-face {
+    font-family: 'Inter';
+    src:
+    url(/fonts/Inter-SemiBold.woff) format('woff'),
+    url(/fonts/Inter-SemiBold.woff2) format('woff2');
+    font-weight: 600;
+}
+  
+  @font-face {
+    font-family: 'Inter';
+    src:
+    url(/fonts/Inter-Bold.woff) format('woff'),
+    url(/fonts/Inter-Bold.woff2) format('woff2');
+    font-weight: 900;
 }
 
 body {
@@ -18,8 +35,9 @@ body {
     padding: 28px 48px 24px;
 }
 
+/* header */
+
 .header {
-    border: 1px solid white;
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -32,4 +50,50 @@ body {
 
 .header__lang-link_active {
     text-decoration: underline;
+}
+
+/* lead */
+
+.lead {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.lead__title {
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 100px;    
+    width: 720px;
+    height: 200px;
+    margin: 56px 0 32px;
+}
+
+.lead__subtitle {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    width: 640px;
+    margin: 0 0 64px;
+}
+
+.lead__image {
+    width: 984px;
+    height: 615px;
+    position: relative;
+}
+
+.lead__image_map {
+    position: absolute;
+    left: 20%;
+}
+
+.lead__caption {
+    text-align: start;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
