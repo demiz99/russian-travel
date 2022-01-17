@@ -1,0 +1,15 @@
+.footer-sec {
+    padding: 89px 50px 24px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .footer-sec {
+        padding: 64px 16px 24px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .footer-sec {
+        padding: 89px 24px 24px;
+    }
+}

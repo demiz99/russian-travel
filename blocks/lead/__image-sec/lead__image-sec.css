@@ -1,0 +1,11 @@
+.lead__image-sec {
+    margin: 0;
+    transition: .3s;
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .lead__image-sec {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+}

@@ -1,0 +1,27 @@
+.cover__overlay {
+    background: url(../../../images/__background.jpg);
+    z-index: 0;
+    text-decoration: none;
+    background-size: cover;
+    position: relative;
+    color: white;
+    background-position: center;
+}
+
+.cover__overlay::before {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    background: #2A2C2F;
+    opacity: 0.3;
+    transition: opacity .3s;
+    z-index: -1;
+}
+
+.cover__overlay:hover::before {
+    opacity: 0.8;
+}
+
