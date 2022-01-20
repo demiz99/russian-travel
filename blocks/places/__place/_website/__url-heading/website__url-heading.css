@@ -2,6 +2,7 @@
     font-size: 12px;
     line-height: 12px;
     color: #AAAAAA;
+    letter-spacing: 2px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {

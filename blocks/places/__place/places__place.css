@@ -13,7 +13,6 @@
 
 @media (min-width: 320px) and (max-width: 767px) {
     .places__place {
-        display: grid;
         row-gap: 32px;
         grid-template-columns: minmax(min-content, 1fr);
         transition: .3s;

@@ -5,6 +5,9 @@
     align-items: center;
     text-align: center;
     margin-bottom: 92px;
+    width: 100%;
+    /* На 1280 должна быть максимальная ширина у блока  */
+    /* - Не понял что нужно сделать ибо от 100% ширины ничего не меняется визуально */
 }
 
 @media (min-width: 320px) and (max-width: 767px) {

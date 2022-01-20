@@ -9,3 +9,12 @@
 .footer__link-a:hover {
     opacity: 0.8;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer__link-a {
+      font-size: 24px;
+      line-height: 24px;
+  }
+}
+/* У каждого элемента должна быть отдельная папка  */
+/* Разве не у каждого блока? Элемент в элементе/модификатор в модификаторе */
