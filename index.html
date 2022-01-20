@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,17 +9,19 @@
 </head>
 <body>
     <div class="page">
-        <section class="head-section">
             <header class="header">
-                <img src="./images/header-logo.svg" alt="logo" class="header__logo">
+                <img src="./images/header-logo.svg" alt="Логотип" class="header__logo">
                 <div class="header__lang-link">
                     <a href="#" class="header__lang-link header__lang-link_active">Ru</a>
                     <a href="#" class="header__lang-link">En</a>
                 </div>
             </header>
-        </section>
+        <main>
         <section class="lead-section">
             <div class="lead">
+          <!-- Этот элемент - лишняя обертка. -->
+          <!-- Ее можно удалить без вреда для верстки. Старайтесь избегать лишних элементов в разметке. -->
+          <!-- - Сомневаюсь, у меня вёрстка ломается в тайтле -->
                 <h1 class="lead__title">Путешествия по России</h1>
                 <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
                 <figure class="lead__image-sec">
@@ -28,24 +30,29 @@
                 </figure>
             </div>
         </section>
-        <main>
         <section class="intro-sec">
             <div class="intro-block">
+              <!-- Этот элемент - лишняя обертка.  -->
+              <!-- Без него адаптив с шириной экрана меньше 768рх - не адаптив -->
                 <div class="intro">
+              <!-- Этот элемент - лишняя обертка.  -->
+              <!-- Аналогичная ситуация - как иначе то сделать если я уберу этот див. У меня сломается вёрстка. Она не может быть лишней. Если мне нужно исправить и сделать меньше "обёрток" - лучше уж так и написать а не просто "убрать" -->
                     <h2 class="intro__title">Чего мы там не видели?</h2>
                     <p class="intro__text">По&nbsp;опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но&nbsp;только 36% планируют провести отпуск в&nbsp;родной стране. Мол, чего мы&nbsp;тут, дома, не&nbsp;видели? На самом деле, Россия&nbsp;&mdash; это целая вселенная с&nbsp;ласковым морем юга, густыми лесами Саян и&nbsp;суровыми льдами плато Путорана. А&nbsp;ещё увидеть все эти красоты можно без миллионов на&nbsp;счету, загранпаспорта и&nbsp;многочасовых перелетов. Как, например, Вера Башмакова&nbsp;&mdash; смелая молодая мама, которая взяла в&nbsp;охапку троих детей, усадила их в&nbsp;свою &laquo;Ладу&raquo; и&nbsp;проехала 20 тысяч километров по&nbsp;родной стране. Мы&nbsp;выбрали и описали некоторые интересные места, достойные вашего отпуска.</p>
                     <ul class="intro__list">
-                        <li class="intro__list-item">Часовых поясов <span class="intro__list-item_normal">11</span></li>
-                        <li class="intro__list-item">Объектов природного наследия ЮНЕСКО <span class="intro__list-item_normal">12</span></li>
-                        <li class="intro__list-item">Объектов культурного наследия ЮНЕСКО <span class="intro__list-item_normal">16</span></li>
-                        <li class="intro__list-item">Природных заповедников <span class="intro__list-item_normal">105</span></li>
-                        <li class="intro__list-item">Аэропортов <span class="intro__list-item_normal">241</span></li>
+                        <li class="intro__list-item">Часовых поясов <span class="intro__list-item-normal">11</span></li>
+                        <li class="intro__list-item">Объектов природного наследия ЮНЕСКО <span class="intro__list-item-normal">12</span></li>
+                        <li class="intro__list-item">Объектов культурного наследия ЮНЕСКО <span class="intro__list-item-normal">16</span></li>
+                        <li class="intro__list-item">Природных заповедников <span class="intro__list-item-normal">105</span></li>
+                        <li class="intro__list-item">Аэропортов <span class="intro__list-item-normal">241</span></li>
                     </ul>
                 </div>
             </div>
         </section>
         <section class="photo-grid-sec">
             <div class="photo-grid">
+              <!-- Аналогично -->
+              <!-- По-моему секшену задают паддинги а там уже и диву все что нужно внутри (то есть, photo-grid все свойства), разве нет? -->
                 <img src="./images/photo-grid-train.jpg" alt="train" class="photo-grid__item">
                 <img src="./images/photo-grid-atharva-tulsi.jpg" alt="atharva-tulsi" class="photo-grid__item">
                 <img src="./images/photo-grid-tuman.jpg" alt="tuman" class="photo-grid__item">
@@ -62,72 +69,75 @@
         </section>
         <section class="places-sec">
             <div class="places__place">
-                    <h3 class="places__place_title">Куршская коса</h3>
-                    <div class="places__place_website">
+                    <h3 class="places__place-title">Куршская коса</h3>
+                    <div class="places__place-website">
                         <p class="website__url-heading">URL</p>
                         <a href="http://park-kosa.ru" class="website__link">park-kosa.ru</a>
                     </div>
-                    <img src="./images/place-kosa.jpg" alt="kosa" class="places__place_image">
-                    <div class="places__place_paragraphs">
-                        <p class="places__place_paragraph">Здесь, посреди лесов и песчаных дюн, вы сможете увидеть два водных горизонта — спокойного Куршского залива с одной стороны и подёрнутого рябью волн Балтийского моря с другой. Уникальная природная зона на краю российского анклава.</p>
-                        <p class="places__place_paragraph">На этом Калининградская область не заканчивается. Для путешественника и исследователя там же по соседству — самая западная точка России, Балтийская коса, — и немецкое наследие россыпи небольших приморских городов. Атмосфера здешних мест исключает суету, окуная в спокойствие природы и запах стального, прохладного моря.</p>
+                    <img src="./images/place-kosa.jpg" alt="kosa" class="places__place-image">
+                    <div class="places__place-paragraphs">
+                        <p class="places__place-paragraph">Здесь, посреди лесов и песчаных дюн, вы сможете увидеть два водных горизонта — спокойного Куршского залива с одной стороны и подёрнутого рябью волн Балтийского моря с другой. Уникальная природная зона на краю российского анклава.</p>
+                        <p class="places__place-paragraph">На этом Калининградская область не заканчивается. Для путешественника и исследователя там же по соседству — самая западная точка России, Балтийская коса, — и немецкое наследие россыпи небольших приморских городов. Атмосфера здешних мест исключает суету, окуная в спокойствие природы и запах стального, прохладного моря.</p>
                     </div>
             </div>
             <div class="places__place">
-                    <h3 class="places__place_title">Кольский</h3>
-                    <div class="places__place_website">
+                    <h3 class="places__place-title">Кольский</h3>
+                    <div class="places__place-website">
                         <p class="website__url-heading">URL</p>
                         <a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" class="website__link">National Geographic</a>
                     </div>
-                    <img src="./images/place-kolsky.jpg" alt="kolskiy" class="places__place_image">
-                    <div class="places__place_paragraphs">
-                        <p class="places__place_paragraph">Почти весь полуостров находится за Полярным кругом. Саамская тундра, от которой на юг —
+                    <img src="./images/place-kolsky.jpg" alt="kolskiy" class="places__place-image">
+                    <div class="places__place-paragraphs">
+                        <p class="places__place-paragraph">Почти весь полуостров находится за Полярным кругом. Саамская тундра, от которой на юг —
                             тайга,&nbsp;а&nbsp;на север — Ледовитый океан, прикидывающийся&nbsp;Баренцевым морем.</p>
-                        <p class="places__place_paragraph">Возможно, вы смотрели Звягинцева и даже слышали историю арктического фестиваля в Териберке. Возможно, слово «Хибины» не осталось под снегом школьных воспоминаний об уроках географии. Возможно, вы не интересовались пронизывающей земную кору сверхглубокой скважиной, а от апатитов вас давно накрывает апатия. Но ваша мечта увидеть северное сияние начинает сбываться с билетом
+                        <p class="places__place-paragraph">Возможно, вы смотрели Звягинцева и даже слышали историю арктического фестиваля в Териберке. Возможно, слово «Хибины» не осталось под снегом школьных воспоминаний об уроках географии. Возможно, вы не интересовались пронизывающей земную кору сверхглубокой скважиной, а от апатитов вас давно накрывает апатия. Но ваша мечта увидеть северное сияние начинает сбываться с билетом
                             в&nbsp;Мурманск.</p>
                     </div>
             </div>
             <div class="places__place">
-                    <h3 class="places__place_title">Алтай</h3>
-                    <div class="places__place_website">
+                    <h3 class="places__place-title">Алтай</h3>
+                    <div class="places__place-website">
                         <p class="website__url-heading">URL</p>
                         <a href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822" class="website__link">Facebook</a>
                     </div>
-                    <img src="./images/place-altai.jpg" alt="altai" class="places__place_image">
-                    <div class="places__place_paragraphs">
-                        <p class="places__place_paragraph">Алтай — одно из красивейших мест в России.
+                    <img src="./images/place-altai.jpg" alt="altai" class="places__place-image">
+                    <div class="places__place-paragraphs">
+                        <p class="places__place-paragraph">Алтай — одно из красивейших мест в России.
                             В&nbsp;первую очередь из-за гор: если ехать вдоль хребта, вы увидите склоны, усыпанные соснами, горные реки и озёра. А если вы откроете в автомобиле окна, сможете познакомиться с невидимым чудом здешних мест — горным воздухом.</p>
-                        <p class="places__place_paragraph">Климат на Алтае умеренный, поэтому ехать сюда лучше всего летом. Так вы увидите всё разнообразие местной флоры и фауны. По лесам Алтая бродят лоси, над хребтами летают орлы, а на равнинах пасутся косули. И знаменитые манулы — тоже обитатели Алтайского края.</p>
+                        <p class="places__place-paragraph">Климат на Алтае умеренный, поэтому ехать сюда лучше всего летом. Так вы увидите всё разнообразие местной флоры и фауны. По лесам Алтая бродят лоси, над хребтами летают орлы, а на равнинах пасутся косули. И знаменитые манулы — тоже обитатели Алтайского края.</p>
                     </div>
             </div>
             <div class="places__place">
-                    <h3 class="places__place_title">Зимний Байкал</h3>
-                    <div class="places__place_website">
+                    <h3 class="places__place-title">Зимний Байкал</h3>
+                    <div class="places__place-website">
                         <p class="website__url-heading">URL</p>
                         <a href="https://vk.com/baikalmile" class="website__link">https://vk.com/baikalmile</a>
                     </div>
-                    <img src="./images/photo-grid-baikal.jpg" alt="baikal" class="places__place_image">
-                    <div class="places__place_paragraphs">
-                        <p class="places__place_paragraph">Всем известен Байкал как крупнейшее озеро в&nbsp;мире.&nbsp;Многие также знают, что это самый большой источник пресной воды и одно из красивейших мест в России.</p>
-                        <p class="places__place_paragraph">Конечно, это всё так. Но Байкал ещё идеальное место для соревнований по скийорингу. Это такой вид спорта, когда лыжник привязывает себя
+                    <img src="./images/photo-grid-baikal.jpg" alt="baikal" class="places__place-image">
+                    <div class="places__place-paragraphs">
+                        <p class="places__place-paragraph">Всем известен Байкал как крупнейшее озеро в&nbsp;мире.&nbsp;Многие также знают, что это самый большой источник пресной воды и одно из красивейших мест в России.</p>
+                        <p class="places__place-paragraph">Конечно, это всё так. Но Байкал ещё идеальное место для соревнований по скийорингу. Это такой вид спорта, когда лыжник привязывает себя
                             к&nbsp;мотоциклу, и тандем старается развить как можно бóльшую скорость на льду. В марте 2019 года на фестивале «Байкальская миля» был поставлен мировой рекорд — 197.011 км/ч.</p>
                     </div>
             </div>
             <div class="places__place">
-                    <h3 class="places__place_title">Карелия</h3>
-                    <div class="places__place_website">
+                    <h3 class="places__place-title">Карелия</h3>
+                    <div class="places__place-website">
                         <p class="website__url-heading">URL</p>
                         <a href="http://vodlozero.ru/" class="website__link">http://vodlozero.ru/</a>
                     </div>
-                    <img src="./images/place-karelia.jpg" alt="karelia" class="places__place_image">
-                    <div class="places__place_paragraphs">
-                        <p class="places__place_paragraph">Сибирь заканчивается не на Урале, а в Карелии: образующая тайгу сибирская лиственница не растёт западнее Водлозера. Зато здесь она вымахивает на 30 метров — леса карельских национальных парков из-за непроходимых болот никогда не знали топора. Некоторым соснам уже больше чем полтысячелетия. Прикоснитесь к живому существу, видевшему солнце раньше, чем увидал его Иван Грозный. В&nbsp;девственном лесу на сотню километров не встретишь тропы. А на редких тропинках деревья в&nbsp;паре метров от земли помечены медвежьими когтями. Чтобы все знали, кто тут хозяин.</p>
+                    <img src="./images/place-karelia.jpg" alt="karelia" class="places__place-image">
+                    <div class="places__place-paragraphs">
+                        <p class="places__place-paragraph">Сибирь заканчивается не на Урале, а в Карелии: образующая тайгу сибирская лиственница не растёт западнее Водлозера. Зато здесь она вымахивает на 30 метров — леса карельских национальных парков из-за непроходимых болот никогда не знали топора. Некоторым соснам уже больше чем полтысячелетия. Прикоснитесь к живому существу, видевшему солнце раньше, чем увидал его Иван Грозный. В&nbsp;девственном лесу на сотню километров не встретишь тропы. А на редких тропинках деревья в&nbsp;паре метров от земли помечены медвежьими когтями. Чтобы все знали, кто тут хозяин.</p>
                     </div>
             </div>
         </section>
         <section class="cover">
             <a href="https://stampsy.com/na-elektrichkakh-do-baikala" class="cover__overlay">
               <div class="cover__background">
+                <!-- Этот элемент - лишняя обертка.  -->
+                <!-- Ее можно удалить без вреда для верстки. Старайтесь избегать лишних элементов в разметке. -->
+                <!-- - Это вообще не понять. Это верстал наставник с потока "Веб-разработчик" (Не "+") и я выполнил по примеру. А тут это лишняя обёртка)) Я чета в шоке) -->
                 <h2 class="cover__title">До Байкала «на собаках»</h2>
                 <p class="cover__subtitle">По мотивам учебной темы о Транссибе — путешествие от столицы до Байкала на электричках»
                 </p>
@@ -136,6 +146,8 @@
           </section>
         </main>
         <section class="footer-sec">
+          <!-- Этот элемент - лишняя обертка.  -->
+          <!-- - В общем, получу от вас подробный фидбек как нужно делать и исправлю ошибки. Мне нужна эта информация, поэтому я хочу знать что и как в действительности нужно, ведь в первой работе успешно делали секции а тут иначе нужно, как оказывается. -->
             <footer class="footer">
               <nav>
                     <ul class="footer__list">
