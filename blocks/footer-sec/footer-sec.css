@@ -1,4 +1,4 @@
-.footer-sec {
+/* .footer-sec {
     padding: 89px 50px 24px;
 }
 
@@ -12,7 +12,7 @@
     .footer-sec {
         padding: 89px 24px 24px;
     }
-}
+} */
 
 /* Блоки не вкладываются в папки других блоков. Все папки блоков должны лежать в blocks. */
 /* - Не понял. Вроде лежит в ./blocks/footer/ */
