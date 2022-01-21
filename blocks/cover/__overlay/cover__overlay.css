@@ -6,6 +6,12 @@
     position: relative;
     color: white;
     background-position: center;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 740px;
 }
 
 .cover__overlay::before {
@@ -23,5 +29,33 @@
 
 .cover__overlay:hover::before {
     opacity: 0.8;
+}
+
+/* .cover__background {
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 740px;
+} */
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .cover__overlay {
+      min-width: 320px;
+      min-height: 200px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .cover__overlay {
+      min-height: 480px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .cover__overlay {
+      min-height: 640px;
+  }
 }
 
