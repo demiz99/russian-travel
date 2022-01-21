@@ -4,12 +4,22 @@
     flex-wrap: wrap;
     gap: 16px;
     transition: .3s;
+    padding: 92px 47px;
+    transition: .3s;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
     .photo-grid {
         gap: 12px;
+        padding: 64px 16px;
+        transition: .3s;
     }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .photo-grid {
+      padding: 88px 24px;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
