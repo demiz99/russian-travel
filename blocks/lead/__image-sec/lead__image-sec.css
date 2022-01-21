@@ -1,6 +1,7 @@
 .lead__image-sec {
     margin: 0;
     transition: .3s;
+    max-width: 984px;
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
