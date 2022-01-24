@@ -1,23 +1,23 @@
-.places-sec {
+.places {
     padding: 0 148px 92px;
     transition: .3s;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-    .places-sec {
+    .places {
         padding: 0 0 66px;
         transition: .3s;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    .places-sec {
+    .places {
         padding: 0 24px 88px;
     }
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
-    .places-sec {
+    .places {
         padding: 0 48px 92px;
     }
 }
