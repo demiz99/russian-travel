@@ -6,12 +6,12 @@
     position: relative;
     color: white;
     background-position: center;
-  display: flex;
-  align-items: center;
-  background-size: cover;
-  justify-content: center;
-  flex-direction: column;
-  min-height: 740px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 740px;
 }
 
 .cover__overlay::before {
