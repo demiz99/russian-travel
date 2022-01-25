@@ -1,4 +1,4 @@
-.website__url-heading {
+.places__url-heading {
     font-size: 12px;
     line-height: 12px;
     color: #AAAAAA;
@@ -6,7 +6,7 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-    .website__url-heading {
+    .places__url-heading {
         margin: 0 0 13px;
     }
 }
