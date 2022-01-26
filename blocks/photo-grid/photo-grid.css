@@ -6,6 +6,8 @@
     transition: .3s;
     padding: 92px 47px;
     transition: .3s;
+    max-width: 1184px;
+    margin: 0 auto;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {

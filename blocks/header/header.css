@@ -4,6 +4,8 @@
     align-items: flex-end;
     padding: 28px 48px 0;
     transition: .3s;
+    margin: 0 auto;
+    max-width: 1184px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
