@@ -1,0 +1,8 @@
+.popup__text {
+  max-width: 690px;
+  color:  #000;
+  margin-top: 0;
+  font-family: Inter;
+  font-family: 16px;
+  line-height: 26px;
+}
