@@ -8,4 +8,9 @@
   display: none;
   align-items: center;
   justify-content: center;
+  /* плавное открытие попапа */
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s .5s, opacity 0.3s linear;
 }
