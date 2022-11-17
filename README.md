@@ -20,4 +20,4 @@ HTML, CSS
 
 **GitHub Pages**
 
-* [Ссылка на GitHub Pages](https://demiz99.github.io/russian-travel/)
+* [Ссылка на GitHub Pages](https://randomu3.github.io/russian-travel/)
